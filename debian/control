@@ -1,6 +1,6 @@
 Source: liborcus
 Priority: optional
-Maintainer: Rene Engelhard <rene@debian.org>
+Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
 Build-Depends: debhelper (>= 8.0.0), autotools-dev, zlib1g-dev, libmdds-dev, python, dh-autoreconf, pkg-config, libboost-system1.53-dev
 # libixion-dev (>= 0.5.0~)
 Standards-Version: 3.9.3

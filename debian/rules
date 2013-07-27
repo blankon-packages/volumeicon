@@ -1,52 +1,9 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
-
-ENABLE_SPREADSHEET_MODEL=n
+LDFLAGS+=-Wl,--as-needed
 
 %:
-	dh $@  --with autotools-dev
-
-override_dh_auto_clean:
-	dh_auto_clean
-	rm -f bin/token_util.pyc
-	rm -f config.log
-
-	find include -name "*.inl" ! -name "*_token_constants.inl" \
-		-exec rm {} \;
-	rm -f liborcus-0.6.pc
-	rm -f src/liborcus/liborcus-test-xml-map-tree \
-		src/orcus-test-common \
-		src/orcus-test-xml \
-		src/liborcus/liborcus-test-string-pool \
-		src/liborcus/liborcus-test-xml-namespace \
-		src/liborcus/liborcus-test-xml-structure-tree \
-		src/liborcus/gnumeric-cell-context-test \
-		src/liborcus/liborcus-test-common \
-		src/liborcus/orcus-xlsx-sheet-context-test \
-		src/parser/parser-test-base64 \
-		src/parser/parser-test-string-pool \
-		src/parser/parser-test-xml-namespace
-ifeq "$(ENABLE_SPREADSHEET_MODEL)" "y"
-	rm -f liborcus-spreadsheet-model-0.6.pc
-	rm -f src/orcus-test-csv \
-		src/orcus-test-xml-mapped
-endif
-	dh_autoreconf_clean
-	#rm -f aclocal.m4 configure config.h.in
-	#find . -name "Makefile.in" -exec rm {} \;
+	dh $@ --with autotools_dev
 
 override_dh_auto_configure:
-	dh_autoreconf
-ifeq "$(ENABLE_SPREADSHEET_MODEL)" "y"
-	dh_auto_configure
-else
-	dh_auto_configure -- --disable-spreadsheet-model
-endif
+	dh_auto_configure -- --enable-notify

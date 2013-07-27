@@ -1,37 +1,28 @@
-Source: liborcus
+Source: volumeicon
+Section: sound
 Priority: optional
 Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
-Build-Depends: debhelper (>= 8.0.0), autotools-dev, zlib1g-dev, libmdds-dev, python, dh-autoreconf, pkg-config, libboost-system1.53-dev
-# libixion-dev (>= 0.5.0~)
+Uploaders: Julien Valroff <julien@debian.org>
+Build-Depends: debhelper (>= 8.0.0~), autotools-dev,
+ libgtk2.0-dev, libasound2-dev, libnotify-dev
 Standards-Version: 3.9.3
-Section: libs
+Homepage: http://softwarebakery.com/maato/volumeicon.html
+Vcs-Git: git://git.debian.org/collab-maint/volumeicon.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/volumeicon.git;a=summary
 
-Package: liborcus-dev
-Section: libdevel
-Architecture: any
-Depends: liborcus-0.6-0 (= ${binary:Version}), libzip-dev, ${misc:Depends}
-Description: library for processing spreadsheet documents -- development
- Orcus is a library that provides a collection of standalone file processing
- filters.  It is currently focused on providing filters for spreadsheet
- documents, but filters for other productivity application types (such as
- wordprocessor and presentation) are in consideration.
- .
- The library currently includes filters for xlsx, ods, csv, and generic XML
- formats.
- .
- This package contains headers, pkg-config file snd static library for
- developing applications using Orcus.
-
-Package: liborcus-0.6-0
-Section: libs
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: library for processing spreadsheet documents
- Orcus is a library that provides a collection of standalone file processing
- filters.  It is currently focused on providing filters for spreadsheet
- documents, but filters for other productivity application types (such as
- wordprocessor and presentation) are in consideration.
- .
- The library currently includes filters for xlsx, ods, csv, and generic XML
- formats.
-
+Package: volumeicon-alsa
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends}, alsa-base
+Suggests: alsamixergui | aumix-gtk | kmix | gnome-alsamixer,
+  notify-osd | xfce4-nofityd | notification-daemon
+Description: systray volume icon for alsa
+ This is a lightweight volume control that sits in your systray. This
+ version is compatible with ALSA.
+ Features:
+    * Change volume by scrolling on the systray icon
+    * Ability to choose which channel to control
+    * Configurable stepsize (percentage of volume
+        increase/decrease per scrollwheel step)
+    * Several icon themes (with gtk theme as default)
+    * Configurable external mixer
+    * Volume slider

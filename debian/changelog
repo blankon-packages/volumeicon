@@ -1,74 +1,42 @@
-liborcus (0.5.1-4.1blankon1) suroboyo; urgency=low
+volumeicon (0.4.6-2blankon1) suroboyo; urgency=low
 
-  * Upstream release
+  * added patch blankon-config-mixer.patch.
+    - integrated gnome-control-center sound.
+  * changes debian/control maintainer
+  * added /etc/xdg/autostart/volumeicon-alsa.desktop 
+ 
+ -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Sun, 28 Jul 2013 05:48:55 +0700
 
- -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Sat, 27 Jul 2013 00:21:23 +0700
+volumeicon (0.4.6-2) unstable; urgency=low
 
-liborcus (0.5.1-4) unstable; urgency=low
+  * Add patch to remove inidividual glib headers - thanks to Michael Biebl
+    <biebl@debian.org> for the patch (Closes: #665623) 
 
-  * upload to unstable 
+ -- Julien Valroff <julien@debian.org>  Sat, 16 Feb 2013 09:18:15 +0100
 
- -- Rene Engelhard <rene@debian.org>  Tue, 23 Jul 2013 18:44:10 +0200
-
-liborcus (0.5.1-3) experimental; urgency=low
-
-  * merge liborcus 0.3.0-8:
-    + use libboost-system1.53-dev explicitly as libmdds-dev does, too - and
-      otherwise we have conflicting build-deps (closes: #713115) 
-  * merge from 0.5.1-2ubuntu1:
-    + hotfix for autotools boost brokeness
-
- -- Rene Engelhard <rene@debian.org>  Mon, 01 Jul 2013 22:14:48 +0200
-
-liborcus (0.5.1-2) experimental; urgency=low
-
-  * merge liborcus 0.3.0-7:
-    + apparently builds with boost 1.53 need libboost-system-dev;
-      add to Build-Depends 
-  * remove libzip-dev builddep (not needed anymore), replace by
-    zlib1g-dev
-
- -- Rene Engelhard <rene@debian.org>  Mon, 29 Apr 2013 14:03:46 +0000
-
-liborcus (0.5.1-1) experimental; urgency=low
+volumeicon (0.4.6-1) unstable; urgency=low
 
   * New upstream release
+  * Update copyright file as per DEP-5 1.0 standard 
+  * Bump Debian standards to 3.9.3 
 
- -- Rene Engelhard <rene@debian.org>  Thu, 18 Apr 2013 23:44:39 +0200
+ -- Julien Valroff <julien@debian.org>  Sat, 17 Mar 2012 08:47:48 +0100
 
-liborcus (0.3.0-5) unstable; urgency=low
+volumeicon (0.4.4-1) unstable; urgency=low
 
-  * upload to unstable 
+  * New upstream version 0.4.4
 
- -- Rene Engelhard <rene@debian.org>  Thu, 18 Apr 2013 23:31:44 +0200
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Sun, 06 Nov 2011 11:52:46 -0500
 
-liborcus (0.3.0-4) experimental; urgency=low
+volumeicon (0.4.3-1) unstable; urgency=low
 
-  * remove misc/OpenDocument-schema-v1.2-cd04.rng, misc/ooxml-ecma-376/ and
-    doc/rfc4180-csv.txt from .orig.. 
+  * New upstream version 0.4.3.
+  * Enabled new notifications feature (via libnotify).
 
- -- Rene Engelhard <rene@debian.org>  Sun, 09 Dec 2012 21:34:40 +0100
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Sat, 17 Sep 2011 19:10:32 +0000
 
-liborcus (0.3.0-3) experimental; urgency=low
+volumeicon (0.4.1-1) unstable; urgency=low
 
-  * add missing build-depend on pkg-config 
+  * Initial release (Closes: #586522)
 
- -- Rene Engelhard <rene@debian.org>  Fri, 07 Dec 2012 22:59:13 +0100
-
-liborcus (0.3.0-2) experimental; urgency=low
-
-  * add missing libzip-dev depends to -dev
-
- -- Rene Engelhard <rene@debian.org>  Thu, 29 Nov 2012 21:34:52 +0100
-
-liborcus (0.3.0-1) experimental; urgency=low
-
-  * New upstream release
-
- -- Rene Engelhard <rene@debian.org>  Wed, 28 Nov 2012 15:25:51 +0100
-
-liborcus (0.1.0-1) experimental; urgency=low
-
-  * Initial release
-
- -- Rene Engelhard <rene@debian.org>  Fri, 23 Nov 2012 20:27:23 +0100
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Wed, 29 Jun 2011 21:35:20 +0000

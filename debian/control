@@ -11,7 +11,7 @@ Vcs-Git: git://git.debian.org/collab-maint/volumeicon.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/volumeicon.git;a=summary
 
 Package: volumeicon-alsa
-Architecture: linux-any
+Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, alsa-base
 Suggests: alsamixergui | aumix-gtk | kmix | gnome-alsamixer,
   notify-osd | xfce4-nofityd | notification-daemon

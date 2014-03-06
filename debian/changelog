@@ -1,3 +1,9 @@
+volumeicon (0.4.6-2blankon2) tambora; urgency=medium
+
+  * upload to tambora
+
+ -- mijortsa <azis.astrojim@surabaya.di.blankon.in>  Thu, 06 Mar 2014 14:48:47 +0700
+
 volumeicon (0.4.6-2blankon1) suroboyo; urgency=low
 
   * added patch blankon-config-mixer.patch.

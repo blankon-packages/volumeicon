@@ -1,1 +1,1 @@
-debian/volumeicon-alsa.desktop /etc/xdg/autostart/
+debian/volumeicon-alsa.desktop etc/xdg/autostart/

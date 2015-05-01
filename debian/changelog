@@ -1,3 +1,9 @@
+volumeicon (0.4.6-2.2blankon2) tambora; urgency=medium
+
+  * Fix typo 
+
+ -- Mahyuddin <yudi.al@gmail.com>  Fri, 01 May 2015 11:42:56 +0700
+
 volumeicon (0.4.6-2.2blankon1) tambora; urgency=medium
 
   * Debian:

@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Volumeicon Alsa
+Name=Volume Icon
 
-Icon=/usr/share/volumeicon.svg
+Icon=volume
 Exec=volumeicon
 Terminal=false
 Type=Application
@@ -11,4 +11,4 @@ X-GNOME-Autostart-enabled=true
 X-GNOME-UsesNotifications=true
 
 
-Name[id_ID]=volumeicon-alsa.desktop
+Name[id_ID]=Volume Icon

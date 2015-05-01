@@ -1,0 +1,2 @@
+debian/volumeicon.desktop usr/share/applications
+debian/volumeicon-autostart.desktop etc/xdg/autostart

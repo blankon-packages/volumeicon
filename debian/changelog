@@ -1,3 +1,38 @@
+volumeicon (0.4.6-2.2blankon1) tambora; urgency=medium
+
+  * Debian:
+    - Rename volumeicon-alsa.desktop to volumeicon-autostart.desktop
+    - Rempve volumeicon-alsa.install
+    - Added volumeicon.desktop and volumeicon.install
+  * Debian/volumeicon-autostart.desktop
+    - Change Name
+    - Change icon name
+  * Debian/volumeicon.install
+    - Add destination dir to install *.desktop
+  * Debian/patches: Drop 002_replace-hardcoded-xterm.diff
+
+ -- Mahyuddin <yudi.al@gmail.com>  Fri, 01 May 2015 11:33:45 +0700
+
+volumeicon (0.4.6-2.2) unstable; urgency=high
+                                                                                                                                                                                  
+  * Non-maintainer upload.                                                                                                                                                       
+  * Add patch to replace x-terminal-emulator instead xterm - thanks to                                                                                                           
+    Luca Capello <luca@pca.it> for the patch. (Closes: #754231)                                                                                                                  
+  * Typo in Depends: xfce4-nofityd => xfce4-notifyd. (Closes: #758494)                                                                                                           
+  * Add .desktop file. (Closes: #749324)                                                                                                                                         
+  * Bump Debian standards to 3.9.6. (no changes needed)                                                                                                                          
+  * Use canoninal Vcs fields.                                                                                                                                                    
+  * Bump debhelper version to 9.                                                                                                                                                 
+                                                                                                                                                                                  
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 26 Oct 2014 13:32:59 +0100                                                                                                       
+                                                                                                                                                                                  
+volumeicon (0.4.6-2.1) unstable; urgency=medium
+                                                                                                                                                                                  
+  * Non-maintainer upload.                                                                                                                                                       
+  * Remove alsa-base from depends. (Closes: #747172)                                                                                                                             
+                                                                                                                                                                                  
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 06 May 2014 20:41:23 +0200  
+
 volumeicon (0.4.6-2blankon3) tambora; urgency=medium
 
   * repair target autostart xdg/autostart/volumeicon-alsa.desktop

@@ -1,3 +1,15 @@
+volumeicon (0.5.1+git20160409-0blankon1) tambora; urgency=medium
+
+  * New upstream release on github
+  * debian/control:
+    - Update Build-Depends for GTK+3.
+    - Add libkeybinder-3.0-dev, dh-autoreconf and intltool to Build-Depends.
+  * Drop 001_remove-individual-glib-headers.diff -- included upstream.
+  * Refresh patch 002_blankon-config-mixer.patch
+  * debian/rules: use autoreconf.
+
+ -- dotovr <dotovr@preko>  Sun, 03 Jul 2016 03:00:51 +0700
+
 volumeicon (0.4.6-2.2blankon5) tambora; urgency=medium
 
   * Debian: added volumeicon-alsa.preinst to remove

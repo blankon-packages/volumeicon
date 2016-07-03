@@ -1,30 +1,12 @@
-diff -Naur volumeicon-0.4.6.orig/src/config.c volumeicon-0.4.6/src/config.c
---- volumeicon-0.4.6.orig/src/config.c	2012-01-14 16:09:20.000000000 +0000
-+++ volumeicon-0.4.6/src/config.c	2013-07-27 21:51:41.451176998 +0000
-@@ -45,13 +45,13 @@
- static gchar * m_hotkey_down = NULL;
- static gchar * m_hotkey_mute = NULL;
- static int m_stepsize = 0;
--static gboolean m_lmb_slider = FALSE;
-+static gboolean m_lmb_slider = TRUE;
- static gboolean m_mmb_mute = FALSE;
- static gboolean m_use_horizontal_slider = FALSE;
- static gboolean m_show_sound_level = FALSE;
--static gboolean m_hotkey_up_enabled = FALSE;
--static gboolean m_hotkey_down_enabled = FALSE;
--static gboolean m_hotkey_mute_enabled = FALSE;
-+static gboolean m_hotkey_up_enabled = TRUE;
-+static gboolean m_hotkey_down_enabled = TRUE;
-+static gboolean m_hotkey_mute_enabled = TRUE;
+diff -Naur volumeicon.orig/configure.ac volumeicon/configure.ac
+--- volumeicon.orig/configure.ac	2016-07-03 03:09:10.002391467 +0700
++++ volumeicon/configure.ac	2016-07-03 03:10:02.579662844 +0700
+@@ -95,7 +95,7 @@
  
- //##############################################################################
- // Static functions
-@@ -59,7 +59,7 @@
- static void config_load_default()
- {
- 	if(!m_helper_program)
--		config_set_helper("xterm -e 'alsamixer'");
-+		config_set_helper("gnome-control-center sound");
- 	if(!m_channel)
- 		config_set_channel(NULL);
- 	if(!m_card)
+ AM_CONDITIONAL(ENABLE_OSS, test "$oss" = "yes")
+ 
+-DEFAULT_MIXERAPP="xterm -e 'alsamixer'"
++DEFAULT_MIXERAPP="gnome-control-center sound"
+ AC_ARG_WITH(default-mixerapp,
+ [  --with-default-mixerapp=appname
+                            Default command for "Open Mixer" menu item

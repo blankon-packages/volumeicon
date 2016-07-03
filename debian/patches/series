@@ -1,2 +1,2 @@
-001_remove-individual-glib-headers.diff
+#001_remove-individual-glib-headers.diff
 002_blankon-config-mixer.patch

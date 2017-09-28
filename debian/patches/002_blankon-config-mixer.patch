@@ -1,0 +1,12 @@
+diff -Naur volumeicon.orig/configure.ac volumeicon/configure.ac
+--- volumeicon.orig/configure.ac	2016-07-03 03:09:10.002391467 +0700
++++ volumeicon/configure.ac	2016-07-03 03:10:02.579662844 +0700
+@@ -95,7 +95,7 @@
+ 
+ AM_CONDITIONAL(ENABLE_OSS, test "$oss" = "yes")
+ 
+-DEFAULT_MIXERAPP="xterm -e 'alsamixer'"
++DEFAULT_MIXERAPP="gnome-control-center sound"
+ AC_ARG_WITH(default-mixerapp,
+ [  --with-default-mixerapp=appname
+                            Default command for "Open Mixer" menu item

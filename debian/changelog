@@ -1,0 +1,86 @@
+volumeicon (0.5.1+git20170117-1blankon1) uluwatu; urgency=medium
+
+  * Debian:
+    - drop volumeicon.install change to install
+    - drop volumeicon.desktop change to volumeicon-autostart.desktop
+    - add volumeicon-alsa.menu
+    - add 002_blankon-config-mixer.patch in debian/patches
+    - add volumeicon-alsa.preinst
+
+ -- AnTo SamalonA <ansamsoftdev@gmail.com>  Thu, 28 Sep 2017 09:54:08 +0800
+
+volumeicon (0.5.1+git20170117-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #682098 #738714 #862107)
+  * Adopt package. (Closes: #826634)
+  * debian/control:
+    - Update Build-Depends for GTK+3.
+    - Add intltool to Build-Depends.
+    - Bump dh version to 10.
+    - Bump Standards-Version to 4.0.0.
+    - Update VCS.
+  * Drop 001_remove-individual-glib-headers.diff -- included upstream.
+  * Drop 002_replace-hardcoded-xterm.diff -- no longer needed. 
+  * debian/rules: use autoreconf.
+  * debian/copyright: Add myself to debian copyright.
+  * Drop menu file.
+  * Enable hardening.
+  * Drop debian/source/lintian-overrides.
+  * Add debian/patches/fix_spelling_error.patch to Fix some spelling errors
+    in manpage.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 09 Jul 2017 18:25:34 +0200
+
+volumeicon (0.4.6-2.2) unstable; urgency=high
+
+  * Non-maintainer upload.
+  * Add patch to replace x-terminal-emulator instead xterm - thanks to
+    Luca Capello <luca@pca.it> for the patch. (Closes: #754231)
+  * Typo in Depends: xfce4-nofityd => xfce4-notifyd. (Closes: #758494)
+  * Add .desktop file. (Closes: #749324)
+  * Bump Debian standards to 3.9.6. (no changes needed)
+  * Use canoninal Vcs fields.
+  * Bump debhelper version to 9.
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Sun, 26 Oct 2014 13:32:59 +0100
+
+volumeicon (0.4.6-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove alsa-base from depends. (Closes: #747172)
+
+ -- Mateusz Łukasik <mati75@linuxmint.pl>  Tue, 06 May 2014 20:41:23 +0200
+
+volumeicon (0.4.6-2) unstable; urgency=low
+
+  * Add patch to remove inidividual glib headers - thanks to Michael Biebl
+    <biebl@debian.org> for the patch (Closes: #665623) 
+
+ -- Julien Valroff <julien@debian.org>  Sat, 16 Feb 2013 09:18:15 +0100
+
+volumeicon (0.4.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Update copyright file as per DEP-5 1.0 standard 
+  * Bump Debian standards to 3.9.3 
+
+ -- Julien Valroff <julien@debian.org>  Sat, 17 Mar 2012 08:47:48 +0100
+
+volumeicon (0.4.4-1) unstable; urgency=low
+
+  * New upstream version 0.4.4
+
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Sun, 06 Nov 2011 11:52:46 -0500
+
+volumeicon (0.4.3-1) unstable; urgency=low
+
+  * New upstream version 0.4.3.
+  * Enabled new notifications feature (via libnotify).
+
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Sat, 17 Sep 2011 19:10:32 +0000
+
+volumeicon (0.4.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #586522)
+
+ -- Andrew Gainer <gainer.andrew@gmail.com>  Wed, 29 Jun 2011 21:35:20 +0000

@@ -1,3 +1,9 @@
+volumeicon (0.5.1+git20170117-1blankon2) uluwatu; urgency=medium
+
+  * Change linux-any to any in architecture
+
+ -- AnTo SamalonA <ansamsoftdev@gmail.com>  Thu, 28 Sep 2017 10:20:41 +0800
+
 volumeicon (0.5.1+git20170117-1blankon1) uluwatu; urgency=medium
 
   * Debian:

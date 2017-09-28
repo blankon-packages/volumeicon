@@ -11,7 +11,7 @@ Vcs-Git: https://github.com/mati75/volumeicon-debian.git
 Vcs-Browser: https://github.com/mati75/volumeicon-debian.git
 
 Package: volumeicon-alsa
-Architecture: linux-any
+Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Suggests: alsamixergui | aumix-gtk | kmix | gnome-alsamixer,
   notify-osd | xfce4-notifyd | notification-daemon
